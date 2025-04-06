@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: rajeshrf16/paytmmovies:latest
+    image: rajeshr3f16/paytmmovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: rajeshrf16/paytmtrain:latest
+    image: rajeshr3f16/paytmtrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   recharge:
-    image: rajeshrf16/paytmrecharge:latest
+    image: rajeshr3f16/paytmrecharge:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   dth:
-    image: rajeshrf16/paytmdth:latest
+    image: rajeshr3f16/paytmdth:latest
     ports:
       - "84:80"
     deploy:
